@@ -1,0 +1,241 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>Travel - Premium HTML Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Load CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css">
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.8.16.custom.css">
+
+	<!-- Page icon -->
+	<link rel="shortcut icon" href="favicon.png">
+
+	<!-- Load Modernizr -->
+	<script src="js/libs/modernizr-2.0.min.js"></script>
+
+	<!-- Load JavaScript -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+	<script src="js/libs/jquery-ui-1.8.16.custom.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+</head>
+<body>
+
+ <!-- Header -->
+<header style="background-image:url(img/placeholders/1280x1024/12.jpg);">
+
+	<div class="container_12">
+
+		<!-- Title and navigation panel -->
+		<div id="panel" class="grid_12">
+
+			<!-- Title -->
+			<h1><a href="index.html">Travel</a></h1>
+
+			<!-- Navigation -->
+			<nav>
+				<ul>
+					<li>
+						<a href="browse.html" class="selected">Browse</a>
+						<ul>	
+							<li><a href="browse.html">Browse all</a></li>
+							<li><a href="browse_hotels.html" class="selected">Browse hotels</a></li>
+							<li><a href="hotel.html">Hotel</a></li>
+							<li><a href="trip.html">Trip</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="faq.html">Pages</a>
+						<ul>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="forms.html">Forms</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+						<ul>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="blogpost.html">Blogpost</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+
+				<!-- Search -->
+				<form action="#" class="black">
+					<input name="search" type="text" placeholder="Search..." />
+					<input type="submit" />
+				</form>
+			</nav>
+		
+		</div>
+
+	</div>
+	
+	<!-- Heading -->
+	<h2>Browse hotels around the world</h2>
+
+</header>
+
+<!-- Main content -->
+<div class="container_12">
+
+	<!-- Search form -->
+	<section class="search_box sidebar grid_4">
+
+		<h2>Find a hotel</h2>
+
+		<!-- Find a hotel form -->
+		<form action="#" class="black">
+
+			<label>Destination</label>
+			<input type="text" name="destination" value="All" />
+
+			<div class="half">
+				<label>Check in</label>
+				<input type="text" name="check_in" class="date" value="11/23/2011" />
+			</div>
+
+			<div class="half last">
+				<label>Check out</label>
+				<input type="text" name="check_out" class="date" value="11/23/2011" />
+			</div>
+
+			<div class="half">
+				<label>Guests</label>
+				<input type="text" name="guests" value="2" />		
+			</div>
+
+			<div class="half last">
+				<label>Rooms</label>
+				<input type="text" name="rooms" value="1" />		
+			</div>
+
+			<input type="submit" value="Search">
+
+		</form>
+
+	</section>
+
+	<!-- Results -->
+	<ul class="results_wide grid_8">
+
+		<li>
+			<a href="hotel.html" class="thumb"><img src="img/placeholders/200x170/8.jpg" alt="" /></a>
+			<h3><a href="hotel.html">Marina Bay Sands</a></h3>
+			<span class="price">40 €</span>
+			<div>
+				<span><a href="#">Singapore</a></span>
+				<span class="stars">
+					<img src="img/star_full.png" alt="" />
+					<img src="img/star_full.png" alt="" />
+					<img src="img/star_full.png" alt="" />
+					<img src="img/star_half.png" alt="" />
+					<img src="img/star_empty.png" alt="" />
+				</span>
+				<span>All inclusive</span>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum nunc at mauris condimentum rhoncus. Proin fermentum ligula vitae elit laoreet a ullamcorper lorem cursus.</p>
+		</li>
+
+		<li>
+			<a href="hotel.html" class="thumb"><img src="img/placeholders/200x170/9.jpg" alt="" /></a>
+			<h3><a href="hotel.html">Hotel Palma</a></h3>
+			<span class="price">40 €</span>
+			<div>
+				<span><a href="#">Mallorca, Spain</a></span>
+				<span class="stars">
+					<img src="img/star_full.png" alt="" />
+					<img src="img/star_full.png" alt="" />
+					<img src="img/star_full.png" alt="" />
+					<img src="img/star_half.png" alt="" />
+					<img src="img/star_empty.png" alt="" />
+				</span>
+				<span>All inclusive</span>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum nunc at mauris condimentum rhoncus. Proin fermentum ligula vitae elit laoreet a ullamcorper lorem cursus.</p>
+		</li>
+
+		<li>
+			<a href="hotel.html" class="thumb"><img src="img/placeholders/200x170/13.jpg" alt="" /></a>
+			<h3><a href="hotel.html">Holiday Inn</a></h3>
+			<span class="price">40 €</span>
+			<div>
+				<span><a href="#">Cannes, France</a></span>
+				<span class="stars">
+					<img src="img/star_full.png" alt="" />
+					<img src="img/star_full.png" alt="" />
+					<img src="img/star_full.png" alt="" />
+					<img src="img/star_half.png" alt="" />
+					<img src="img/star_empty.png" alt="" />
+				</span>
+				<span>All inclusive</span>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum nunc at mauris condimentum rhoncus. Proin fermentum ligula vitae elit laoreet a ullamcorper lorem cursus.</p>
+		</li>
+
+	</ul>
+
+	<div class="clearfix"></div>
+
+	<!-- Pagination -->
+	<nav class="grid_8 prefix_4">
+		<a href="#" class="previous">Previous</a>
+		<a href="#" class="next">Next</a>
+	</nav>
+	
+</div> 
+ 
+ 	<!-- Footer -->
+	<footer><div class="container_12">
+		
+		<nav class="grid_8">
+			<a href="#">Home</a>
+			<a href="#">Catalogue</a>
+			<a href="#">Blog</a>
+			<a href="#">Contact</a>
+			<a href="#">FAQ</a>
+		</nav>
+
+		<p class="address grid_4">
+			<strong>Travel Agency Inc.</strong><br />
+			<span>123 Wall Street , New York</span><br />
+			<span><a href="mailto:contact@travelagency.com">contact@travelagency.com</a></span>
+		</p>
+
+		<p class="copyright grid_8">
+			© 2011 Travel Agency
+		</p>
+
+	</div></footer>
+
+
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-XXXXXXX-X']); // Set your Google Analytics ID here
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+</body>
+</html>

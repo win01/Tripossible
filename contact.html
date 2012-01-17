@@ -1,0 +1,204 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>Travel - Premium HTML Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Load CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css">
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.8.16.custom.css">
+
+	<!-- Page icon -->
+	<link rel="shortcut icon" href="favicon.png">
+
+	<!-- Load Modernizr -->
+	<script src="js/libs/modernizr-2.0.min.js"></script>
+
+	<!-- Load JavaScript -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+	<script src="js/libs/jquery-ui-1.8.16.custom.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+</head>
+<body>
+
+ <!-- Header -->
+<header style="background-image:url(img/placeholders/1280x1024/6.jpg);">
+
+	<div class="container_12">
+
+		<!-- Title and navigation panel -->
+		<div id="panel" class="grid_12">
+
+			<!-- Title -->
+			<h1><a href="index.html">Travel</a></h1>
+
+			<!-- Navigation -->
+			<nav>
+				<ul>
+					<li>
+						<a href="browse.html">Browse</a>
+						<ul>	
+							<li><a href="browse.html">Browse all</a></li>
+							<li><a href="browse_hotels.html">Browse hotels</a></li>
+							<li><a href="hotel.html">Hotel</a></li>
+							<li><a href="trip.html">Trip</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="faq.html">Pages</a>
+						<ul>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="forms.html">Forms</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+						<ul>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="blogpost.html">Blogpost</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact.html" class="selected">Contact</a>
+					</li>
+				</ul>
+
+				<!-- Search -->
+				<form action="#" class="black">
+					<input name="search" type="text" placeholder="Search..." />
+					<input type="submit" />
+				</form>
+			</nav>
+		
+		</div>
+
+	</div>
+
+	<!-- Heading -->
+	<h2>Contact</h2>
+
+</header>
+
+<!-- Main content -->
+<div class="container_12">
+
+	<!-- Map -->
+	<section class="contact_map grid_12">
+		<script>
+			$(function() {
+   				var map = new google.maps.Map(document.getElementById('map'), {
+   					zoom: 17,
+   					center: new google.maps.LatLng(40.7069, -74.0096),
+   					mapTypeId: google.maps.MapTypeId.ROADMAP
+	   			});
+   				var marker= new google.maps.Marker({
+					position: new google.maps.LatLng(40.7069, -74.0096),
+					map: map
+				});
+			});
+		</script>
+		<div id="map"></div>
+	</section>
+
+	<div class="clearfix"></div>
+	<hr class="dashed grid_12" />
+
+	<!-- About -->
+	<section class="about text grid_8">
+		<h2 class="text_big">Travel Agency</h2>
+
+		<p class="address">
+			<span><img src="img/address.png" alt="" /> 123 Wall Street , New York</span>
+			<span><img src="img/email.png" alt="" /> contact@travelagency.com</span>
+			<span><img src="img/phone.png" alt="" /> (111) 100-1000</span>
+		</p>
+
+		<hr class="dashed" />
+
+		<h3>Praesent laoreet sem sit amet urna dapibus?</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus placerat risus, ac vulputate enim facilisis eu. In sodales lacinia elit, ut rhoncus risus consequat sit amet. Suspendisse potenti. Nam imperdiet lacinia aliquet. Donec odio risus, dignissim id placerat et, molestie sed ligula.</p>
+
+		<hr class="dashed" />
+
+		<h3>Aenean nibh sem, placerat ac laoreet ac?</h3>
+		<p>Vestibulum placerat rhoncus massa, vel viverra ligula placerat sit amet. Aenean nibh sem, placerat ac laoreet ac, ullamcorper in est. Nulla facilisi. Suspendisse potenti. Maecenas mollis dui id lacus semper sit amet accumsan augue rhoncus. Ut sed felis eget mi placerat accumsan ut vel risus.</p>
+	</section>
+
+	<!-- Contact form -->
+	<section class="contact_form simple grid_4">
+		
+		<h2 class="text_big">Leave us a message</h2>
+
+		<form action="#" id="contact_form">
+			<label>Your name</label>
+			<input type="text" name="name" />
+
+			<label>Your email</label>
+			<input type="email" name="email" />
+
+			<label>Message</label>
+			<div class="textarea">
+				<textarea name="message" cols="30" rows="10"></textarea>
+			</div>
+
+			<input type="submit" value="Send" class="auto_width">
+			
+			<p class="status"></p>
+
+		</form>
+
+	</section>
+
+</div> 
+ 
+ 	<!-- Footer -->
+	<footer><div class="container_12">
+		
+		<nav class="grid_8">
+			<a href="#">Home</a>
+			<a href="#">Catalogue</a>
+			<a href="#">Blog</a>
+			<a href="#">Contact</a>
+			<a href="#">FAQ</a>
+		</nav>
+
+		<p class="address grid_4">
+			<strong>Travel Agency Inc.</strong><br />
+			<span>123 Wall Street , New York</span><br />
+			<span><a href="mailto:contact@travelagency.com">contact@travelagency.com</a></span>
+		</p>
+
+		<p class="copyright grid_8">
+			© 2011 Travel Agency
+		</p>
+
+	</div></footer>
+
+
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-XXXXXXX-X']); // Set your Google Analytics ID here
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+</body>
+</html>
